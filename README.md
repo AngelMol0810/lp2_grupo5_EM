@@ -1,5 +1,8 @@
 # lp2_grupo5_EM
 
-1
-2
-3
+Integrantes:
+
+1. 
+2. 
+3. Miriam Vanessa Huamaní Diestra
+4.  
