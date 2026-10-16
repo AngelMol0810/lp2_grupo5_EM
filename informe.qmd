@@ -1,0 +1,123 @@
+---
+lang: es
+format:
+  html:
+    code-fold: true
+    code-summary: "Mostrar código"
+    toc: true
+    toc-depth: 5
+    toc-location: left
+    toc-title: "Contenido"
+    number-sections: true
+    theme:
+      light: flatly
+      dark: darkly
+    highlight-style: tango
+    smooth-scroll: true
+    embed-resources: true
+    lightbox: true
+    include-before-body:
+      text: |
+        <div style="font-family: 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 850px; margin: 0 auto; padding: 40px 20px; background-color: #ffffff; border-radius: 8px; text-align: center;">
+
+        <div style="border-bottom: 3px solid #006432; padding-bottom: 20px; margin-bottom: 30px;">
+        <p style="font-size: 1.3em; font-weight: 800; color: #006432; margin: 0; letter-spacing: 1px;">UNIVERSIDAD NACIONAL AGRARIA LA MOLINA</p>
+        <p style="font-size: 1.1em; font-weight: 700; color: #4A5568; margin: 8px 0 0 0;">FACULTAD DE ECONOMÍA Y PLANIFICACIÓN</p>
+        <p style="font-size: 1em; font-weight: 600; color: #718096; margin: 5px 0 0 0;">DEPARTAMENTO ACADÉMICO DE ESTADÍSTICA E INFORMÁTICA</p>
+        </div>
+
+        <div style="margin: 0 auto 30px auto;">
+        <img src="images/logo_UNALM.png" alt="Logo UNALM" style="width: 150px; height: auto; display: block; margin: 0 auto;">
+        </div>
+
+        <div style="background-color: #f8fafc; border-left: 5px solid #006432; padding: 15px; border-radius: 4px; margin: 0 auto 25px auto; max-width: 650px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+        <p style="font-size: 1.4em; font-weight: 700; color: #2d3748; margin: 0; letter-spacing: 0.5px;">Lenguaje de Programación II</p>
+        </div>
+
+        <p style="font-size: 1.1em; margin-bottom: 10px; color: #2d3748;"><strong>Docente:</strong> Vargas Paredes, Ana Cecilia </p>
+
+        <p style="font-size: 1.3em; font-weight: bold; color: #006432; margin: 20px 0 10px 0; line-height: 1.4;">Sistema de detección de correos spam</p>
+        <p style="font-size: 1.1em; color: #4A5568; margin-bottom: 25px;"><strong>Grupo:</strong> 5</p>
+
+        <table style="margin: 0 auto 35px auto; border-collapse: collapse; width: 80%; background-color: #ffffff; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border-radius: 6px; overflow: hidden;">
+        <thead>
+        <tr style="background-color: #006432; color: #ffffff; text-align: left;">
+        <th style="padding: 12px 20px; font-weight: 600;">Integrantes</th>
+        <th style="padding: 12px 20px; font-weight: 600; text-align: center;">Código</th>
+        </tr>
+        </thead>
+        <tbody style="color: #2d3748; text-align: left;">
+        <tr style="border-bottom: 1px solid #e2e8f0;"><td style="padding: 10px 20px;">Huamani Diestra, Miriam Vanessa</td><td style="padding: 10px 20px; text-align: center;">codigo_aqui!!</td></tr>
+
+        <tr style="border-bottom: 1px solid #e2e8f0;"><td style="padding: 10px 20px;">Meza Asto, Angel David</td><td style="padding: 10px 20px; text-align: center;">20220810</td></tr>
+
+        <tr style="border-bottom: 1px solid #e2e8f0;"><td style="padding: 10px 20px;">Chavez Cuzcano, Victor Javier</td><td style="padding: 10px 20px; text-align: center;">codigo_aqui</td></tr>
+
+        <tr style="border-bottom: 1px solid #e2e8f0;"><td style="padding: 10px 20px;">Alva Aquino, Brian</td><td style="padding: 10px 20px; text-align: center;">codigo_aqui!!!</td></tr>
+
+        </table>
+
+        <p style="font-weight: 600; color: #718096; margin: 5px 0; letter-spacing: 1px;">LA MOLINA - LIMA - PERÚ</p>
+        <p style="font-weight: 600; color: #718096; margin: 0;">2026 - II</p>
+
+        </div>
+        <hr style="margin-top: 40px; border: 0; border-top: 1px solid #e2e8f0;" />
+---
+
+```{python}
+print("hello world")
+```
+
+## Insetando subtitulos
+
+```{python}
+print("este es un titulo")
+```
+
+### Insertando callouts
+
+:::{.callout-note title="titulo del callout"}
+Este es un mensjae importante
+
+:::
+
+
+::: {.callout-important}
+## otra forma de poner los titulos
+Solo basta con poner callout en vscode, y este va a poner los ":::" 
+
+:::
+
+### mas recomendaciones
+
+
+```{python}
+print("la ventaja de QUARTO es que puede trabajar con diferentes lenguajes de programacion.")
+
+```
+
+es lo mismo que el ipynb , pero con la diferencia de que para poder incluir los chuncks de manera facil tienes que usar los siguientes atajos de teclado ctrl + shift + i 
+
+# la forma de trabajo
+
+## Parte de vanessa 
+aca iran los codigos en python de vanessa asi como tambien 
+la explicacion de esos codigos
+
+## parte de brian 
+ 
+lo mismo
+
+## parte de angel
+
+lo mismo
+
+## parte de victor
+
+lo mismo
+
+## resultados 
+
+## conclusiones
+
+por que trabajar de esa manera, porque nos va a permiter trabajar en nuestra parte sin interferir con el trabajo del otro
