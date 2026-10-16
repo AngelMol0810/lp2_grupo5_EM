@@ -2,7 +2,7 @@
 
 Integrantes:
 
-1. 
-2. 
-3. Miriam Vanessa Huamaní Diestra
+1. Huamaní Diestra, Miriam Vanessa
+2. Meza Asto, Angel David
+3. 
 4.  
