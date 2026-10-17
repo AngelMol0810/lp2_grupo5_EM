@@ -40,13 +40,20 @@ class DetectorSpam:
             puntos, motivo = regla.evaluar(correo)
             if puntos > 0:
                 puntaje_total += puntos
-                motivos.append(f"{motivo} (+{puntos} pts)")
+                if motivo:
+                    motivos.append(f"{regla.get_nombre()}: {motivo} (+{puntos} pts)")
+        es_spam = puntaje_total >= self.__umbral
 
-        # Asignamos el puntaje final al correo mediante su setter
-        correo.set_puntaje(puntaje_total)
+        # Integración segura con Correo (usa métodos si existen, o actualiza atributos)
+        if hasattr(correo, "marcar_como_spam"):
+            correo.marcar_como_spam(puntaje_total, es_spam, motivos)
+        elif hasattr(correo, "set_puntaje"):
+            correo.set_puntaje(puntaje_total)
+            if hasattr(correo, "set_es_spam"):
+                correo.set_es_spam(es_spam)
+        else:
+            # Fallback temporal si aún no mergean los métodos en la clase Correo
+            correo._Correo__puntaje = puntaje_total
+            correo._Correo__es_spam = es_spam
 
-        # Si supera o iguala el umbral, se clasifica como spam
-        if puntaje_total >= self.__umbral:
-            correo.marcar_como_spam(motivos)
-            return True
-        return False
+        return es_spam
